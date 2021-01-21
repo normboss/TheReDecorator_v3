@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Philosopher&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+
+body * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@mixin min-mixin($arg) {
+    @media screen and (min-width: $arg ) {
+        @content;
+    }
+}
+
+@mixin min-max-mixin($arg1, $arg2) {
+    @media screen and (min-width: $arg1 ) and (max-width: $arg2) {
+        @content;
+    }
+}
+
+@mixin max-mixin($arg) {
+    @media screen and (max-width: $arg ) {
+        @content;
+    }
+}
+
+@mixin max-height-mixin($arg) {
+    @media screen and (max-width: $arg ) {
+        @content;
+    }
+}
+@font-face {
+    font-family: Zapfino;
+    src: url("./fonts/Zapfino Zip/Unziped/ZapfinoExtraLT-One.otf");
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: normal;
+    src: url("./fonts/HelveticaNeue.tff");
+}
+// Noteworthy-Lt.ttf
+@font-face {
+    font-family: 'Noteworthy Light';
+    font-style: normal;
+    font-weight: normal;
+    src: url("./fonts/Noteworthy-Lt.ttf");
+}
+
+.button1 {
+    width: 150px;
+    height: 60px;
+    background-color: #f0e3df;
+    background: #f0e3df 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #bfb7b4;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.footer {
+    margin-top: 25px;
+    width: 100%;
+    height: 160px;
+    background-color: #F0E3DF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // overflow: hidden;
+
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include max-mixin(500px) {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        // width: 60%;
+        margin: 0 auto;
+        // overflow: hidden;
+
+        .footer-text {
+            margin-right: 50px;
+            .logo {
+                color: #050505;
+                .red-text {
+                    color: red;
+                }
+
+            }
+            h3 {
+                color: #707070;
+            }
+            @include max-mixin(450px) {
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+.header {
+    .menu1 {
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 25px;
+        ul {
+            display: flex;
+
+            font-family: "Open Sans";
+            font-size: 18px;
+            list-style: none;
+            li {
+                padding-right: 20px;
+                a {
+                    text-decoration: none;
+                    color: #000000;
+                }
+            }
+            @include max-mixin(450px) {
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+.block1 {
+    h2 {
+        font-size: 30px;
+        color: #7B7F83;
+        @include max-mixin(400px) {
+            font-size: 20px;
+        }
+    }
+}
+
+
+.block2 {
+    // border: 3px solid red;
+    display: flex;
+    align-items: center;
+    @include max-mixin(900px) {
+        flex-direction: column;
+        padding-bottom: 25px;;
+    }
+
+    h1 {
+        font-family: "Oswald", sans-serif;
+        font-size: 80px;
+        color: #f00e0e;
+        @include max-mixin(900px) {
+            font-size: 10vw;
+        }
+        @include max-mixin(450px) {
+            font-size: 40px;
+        }
+    }
+    p {
+        border: 1px solid #707070;
+        font-weight: 400;
+        color: black;
+        font-size: 25px;
+        background-color: #f0dead;
+        padding: 10px 10px 13px 10px;
+        height: 60px;
+        margin-left: 40px;
+        margin-top: 10px;
+        @include max-mixin(900px) {
+            // font-size: 2.5vw;
+            margin-left: 10px;
+        }
+        @include max-mixin(900px) {
+            font-size: 4vw;
+        }
+        @include max-mixin(400px) {
+            font-size: 15px;
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+}
+.block3 {
+    // border: 3px solid red;
+    color: #707070;
+    // width: 60%;
+    font-size: 28px;
+    @include max-mixin(500px) {
+        font-size: 22px;
+    }
+}

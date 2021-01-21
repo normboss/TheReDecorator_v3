@@ -1,0 +1,37 @@
+body {
+  background: url(img/bg-body.jpg) repeat-x #000;
+}
+
+.sliderWrapper {
+  position: relative;
+  width: 530px;
+  height: 375px;
+  white-space: nowrap;
+  margin: 50px auto 0 auto;
+  overflow: hidden;
+}
+
+.sliderWrapper div {
+  position: relative;
+}
+
+.nav {
+  margin: 10px auto 0 auto;
+  width: 530px;
+}
+
+.nav .button {
+  padding: 10px;
+  background-color: #fff;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.nav .button:hover {
+  background-color: #ffcc00;
+}
+
+.nav .buttonRight {
+  float: right;
+}
+/*# sourceMappingURL=sliderbase.css.map */

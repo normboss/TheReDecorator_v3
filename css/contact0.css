@@ -1,0 +1,399 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Philosopher&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+body * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Zapfino;
+  src: url("./fonts/Zapfino Zip/Unziped/ZapfinoExtraLT-One.otf");
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  font-style: normal;
+  font-weight: normal;
+  src: url("./fonts/HelveticaNeue.tff");
+}
+
+@font-face {
+  font-family: 'Noteworthy Light';
+  font-style: normal;
+  font-weight: normal;
+  src: url("./fonts/Noteworthy-Lt.ttf");
+}
+
+.button1 {
+  width: 150px;
+  height: 60px;
+  background-color: #f0e3df;
+  background: #f0e3df 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #bfb7b4;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.footer {
+  margin-top: 25px;
+  width: 100%;
+  height: 160px;
+  background-color: #F0E3DF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 500px) {
+  .footer .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.footer .footer-content .footer-text {
+  margin-right: 50px;
+}
+
+.footer .footer-content .footer-text .logo {
+  color: #050505;
+}
+
+.footer .footer-content .footer-text .logo .red-text {
+  color: red;
+}
+
+.footer .footer-content .footer-text h3 {
+  color: #707070;
+}
+
+@media screen and (max-width: 450px) {
+  .footer .footer-content .footer-text {
+    font-size: 15px;
+  }
+}
+
+.header .menu1 {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 25px;
+}
+
+.header .menu1 ul {
+  display: flex;
+  font-family: "Open Sans";
+  font-size: 18px;
+  list-style: none;
+}
+
+.header .menu1 ul li {
+  padding-right: 20px;
+}
+
+.header .menu1 ul li a {
+  text-decoration: none;
+  color: #000000;
+}
+
+@media screen and (max-width: 450px) {
+  .header .menu1 ul {
+    font-size: 13px;
+  }
+}
+
+.block1 h2 {
+  font-size: 30px;
+  color: #7B7F83;
+}
+
+@media screen and (max-width: 400px) {
+  .block1 h2 {
+    font-size: 20px;
+  }
+}
+
+.block2 {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 900px) {
+  .block2 {
+    flex-direction: column;
+    padding-bottom: 25px;
+  }
+}
+
+.block2 h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 80px;
+  color: #f00e0e;
+}
+
+@media screen and (max-width: 900px) {
+  .block2 h1 {
+    font-size: 10vw;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .block2 h1 {
+    font-size: 40px;
+  }
+}
+
+.block2 p {
+  border: 1px solid #707070;
+  font-weight: 400;
+  color: black;
+  font-size: 25px;
+  background-color: #f0dead;
+  padding: 10px 10px 13px 10px;
+  height: 60px;
+  margin-left: 40px;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 900px) {
+  .block2 p {
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .block2 p {
+    font-size: 4vw;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .block2 p {
+    font-size: 15px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.block3 {
+  color: #707070;
+  font-size: 28px;
+}
+
+@media screen and (max-width: 500px) {
+  .block3 {
+    font-size: 22px;
+  }
+}
+
+body {
+  margin: 0 auto;
+  font-family: "Open Sans", sans-serif;
+  margin: 0 auto;
+  max-width: 1000px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.red-text {
+  color: red;
+}
+
+.header {
+  margin: 0 auto;
+  padding-bottom: 25px;
+}
+
+.main {
+  margin: 0 auto;
+  margin-left: 0;
+}
+
+.main img {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.main .form-container {
+  width: 100%;
+  height: 800px;
+  border: 1px solid #707070;
+  font-family: "Open Sans";
+  font-size: 14px;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+  .main .form-container {
+    align-items: flex-start;
+    padding-left: 20px;
+  }
+}
+
+.main .form-container .text-block {
+  font-size: 18px;
+  text-align: left;
+  width: 70%;
+}
+
+@media screen and (max-width: 1000px) {
+  .main .form-container .text-block {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main .form-container .text-block {
+    width: 99%;
+    margin-left: 0px;
+  }
+}
+
+.main .form-container form {
+  height: 500px;
+  width: 70%;
+  padding-top: 25px;
+  border: 0px solid blue;
+  text-align: left;
+}
+
+@media screen and (max-width: 1000px) {
+  .main .form-container form {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main .form-container form {
+    width: 99%;
+    margin-left: 0px;
+  }
+}
+
+.main .form-container form .diagnostic {
+  color: red;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.main .form-container form textarea {
+  height: 300px;
+  height: auto;
+  /*width: 400px;*/
+  width: 100%;
+}
+
+.main .form-container form label {
+  width: auto;
+  text-align: left;
+  font-style: italic;
+  display: block;
+  padding-top: 5px;
+  font-size: 18px;
+  color: #707070;
+  line-height: normal;
+}
+
+.main .form-container form .field-block {
+  display: flex;
+  margin-bottom: 20px;
+  width: auto;
+}
+
+.main .form-container form .field-block input {
+  height: 25px;
+  font-size: 18px;
+  border-bottom: 2px solid #d0d0d0;
+}
+
+.main .form-container form .contact-field label {
+  width: 250px;
+}
+
+.main .form-container form .contact-field input {
+  font-size: 18px;
+  border-bottom: 2px solid #d0d0d0;
+}
+
+.main .form-container form .description-field {
+  font-size: 20px;
+}
+
+.main .form-container form .description-field label {
+  width: 500px;
+  height: 50px;
+}
+
+.main .form-container form .question-field label {
+  width: 500px;
+}
+
+.main .form-container form input {
+  width: 99%;
+  border: 0px;
+  background-color: #fff;
+  padding: 5px;
+  margin-bottom: 10px;
+  color: #000000;
+  font-size: 18px;
+}
+
+.main .form-container form textarea {
+  font-family: "Open Sans";
+  font-weight: 400;
+  width: 99%;
+  border: 2px #ccc solid;
+  background-color: #fff;
+  border-bottom: 1px #707070 solid;
+  padding: 5px;
+  resize: none;
+  color: #000000;
+  font-size: 18px;
+  border-bottom: 2px solid #d0d0d0;
+}
+
+.main .form-container form .submit {
+  width: 50%;
+  /*margin: 10px 0 20px 0;*/
+  cursor: pointer;
+  color: #444;
+  color: red;
+  font: 16px "Oswald", Verdana, Helvetica, sans-serif;
+  font-weight: normal;
+  padding: 2px 18px;
+  text-decoration: none;
+  background-color: #f8f8f8;
+  background: linear-gradient(#f8f8f8, #d8d8d8);
+  border: solid 1px #d8d8d8;
+  border-radius: 5px;
+}
+
+.main .form-container form .submit:hover {
+  text-decoration: none;
+  color: #fff;
+  background-color: #7b88c5;
+  background: linear-gradient(#7b88c5, #435299);
+  border: solid 1px #435299;
+  border-radius: 5px;
+}
+
+.main .form-container form .button-block {
+  margin: 0 auto;
+  text-align: center;
+}
+/*# sourceMappingURL=contact0.css.map */
